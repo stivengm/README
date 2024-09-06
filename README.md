@@ -11,5 +11,7 @@ G[Gateway]
 P[Presentación]
 
 P --> D
+D --> G
+G --> I
 
 ```
