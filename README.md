@@ -10,6 +10,7 @@ I[Infraestructure]
 G[Gateway]
 P[Presentación]
 H{Hay contenido}
+M[Memoria local]
 
 P --> D
 D --> G
@@ -20,6 +21,10 @@ A --> H
 H --> |SI| A
 H --> |NO| I
 
+A --> I
+
+I --> M
+M --> P
 
 
 ```
