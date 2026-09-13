@@ -28,3 +28,31 @@ M --> P
 
 
 ```
+
+
+
+
+```mermaid
+
+graph LR;
+
+P{Paciente}
+F[Aplicación Flutter]
+B[API .NET]
+S[SQL Server]
+R[Respuesta a la aplicación]
+H{Hay contenido}
+C[Control de errores]
+
+P --> F
+F --> B
+B --> S
+S --> B
+B --> H
+
+H --> |SI| P
+H --> |NO| C
+
+C --> P
+
+```
